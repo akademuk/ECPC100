@@ -198,6 +198,12 @@ body {
 }
 @media (max-width: 576px) {
   .main__container::after {
+    left: 20px;
+    top: 6px;
+  }
+}
+@media (max-width: 400px) {
+  .main__container::after {
     content: none;
   }
 }
@@ -648,7 +654,8 @@ body {
     margin: 18px auto 16px auto;
     background: url(../image/cta-mobile.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
   }
 }
 @media (max-width: 400px) {
